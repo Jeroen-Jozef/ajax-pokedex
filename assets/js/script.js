@@ -9,7 +9,7 @@ document.getElementById("submit").addEventListener("click", function(){
         document.getElementById("id").innerText = "rijksnummer 56-45-43";
         var img = document.getElementById("sprite");
         img.src = "https://avatars3.githubusercontent.com/u/53226870?s=400&v=4";
-        const moves = ['run', 'sleep', 'dance', 'wiggle'];
+        const moves = ['walk with stick', 'sleep', 'dance', 'wiggle', 'smoke', 'grow grey beard'];
         for (let i = 0; i < moves.length; i++) {
             document.querySelectorAll(".move")[i].innerText = moves[i];
         }
