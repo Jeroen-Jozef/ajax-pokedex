@@ -1,2 +1,32 @@
 @import 'joseph';
 @import 'jeroen';
+
+@font-face {
+  font-family: 'digital_dream';
+  src: url('../../assets/font/DIGITALDREAM.ttf')  format('truetype')
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'digital_dream', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: deepskyblue;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+#masterWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#sprite {
+  width: 96px;
+  height: 96px;
+  background-color: green;
+}

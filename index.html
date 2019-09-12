@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<h1>Pokédex</h1>
-<input type="text" id="input">
-<button id="submit" value="submit"></button>
-<div id="masterWrapper">
-    <div id="left">
-        <div class="header"></div>
-        <div class="picture">
+    <header id="header">
+        <h1>Pokedex</h1>
+    </header>
+    <div id="masterWrapper">
+        <div id="left">
+            <div class="picture"></div>
             <img src="" alt="" id="sprite">
+            <input type="text" id="input">
+            <button id="submit" value="submit"></button>
         </div>
-        <div class="choices"></div>
-
-    </div>
-    <div id="right">
-        <div id="id">ID</div>
+        <div id="right">
+            <div id="name"></div>
+            <div id="id">ID</div>
             <div id="move-wrapper">
-            <div class="move">MOVE</div>
-            <div class="move">MOVE</div>
-            <div class="move">MOVE</div>
-            <div class="move">MOVE</div>
+                <div class="move">MOVE</div>
+                <div class="move">MOVE</div>
+                <div class="move">MOVE</div>
+                <div class="move">MOVE</div>
+            </div>
+            <div id="evolution">(D)EVOLUTION</div>
+            <img src="" alt="" id="de-evolved">
         </div>
-        <div id="evolution">(D)EVOLUTION</div>
     </div>
-</div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>

@@ -23,15 +23,17 @@ document.getElementById("submit").addEventListener("click", function(){
         .then(function(response) {
             pokemonInfo = response.data;
             console.log(pokemonInfo);
-            var id = pokemonInfo.id;
+            const id = pokemonInfo.id;
             console.log(id);
-            document.getElementById("id").innerText = id;
-            var sprite = document.getElementById("sprite");
+            document.getElementById("name").innerText = pokemonInfo.name;
+            document.getElementById("id").innerText = "ID: "+id;
+
+            const sprite = document.getElementById("sprite");
             sprite.src = pokemonInfo.sprites.front_default;
             var species = pokemonInfo.species.url;
             console.log(species);
             let moveNames = [];
-            pokemonInfo.moves.forEach(function(move, index){
+            pokemonInfo.moves.forEach(function(move){
                 moveNames.push(move.move.name);
             });
             for (var i = 0; i < 4; i++) {
@@ -46,10 +48,25 @@ document.getElementById("submit").addEventListener("click", function(){
                     speciesInfo = response.data;
                     console.log(speciesInfo);
                     var generationChecker = speciesInfo.evolves_from_species;
+                    var deevolved = document.getElementById("de-evolved");
                     if (generationChecker === null) {
                         document.getElementById("evolution").innerText = "I'm a baby";
+                        deevolved.src = "";
                     } else {
                         document.getElementById("evolution").innerText = generationChecker.name;
+                        let deevolvedPokemon = [];
+                        axios.get("https://pokeapi.co/api/v2/pokemon/"+ generationChecker.name +"/")
+                            .then(function(response){
+                                deevolvedPokemon = response.data;
+                                deevolved.src = deevolvedPokemon.sprites.front_default;
+
+                            })
+                            .catch(function (error) {
+                                console.error(error);
+                            })
+                            .finally(function () {
+
+                            });
                     }
 
 
