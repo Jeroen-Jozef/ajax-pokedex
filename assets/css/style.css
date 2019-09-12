@@ -1,15 +1,65 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  box-sizing: border-box; }
-
 #submit {
   width: 100px;
   height: 100px; }
 
+#right {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: darkred; }
+  #right #name {
+    text-align: center;
+    text-transform: capitalize;
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow; }
+  #right #id {
+    height: 50px;
+    width: 100px;
+    background-color: purple; }
+  #right #moveWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    #right #moveWrapper .move {
+      width: 50px;
+      height: 50px;
+      color: deepskyblue; }
+  #right #evolution {
+    width: 50%;
+    background-color: gold; }
+  #right #de-evolved {
+    width: 96px;
+    height: 96px;
+    background-color: green; }
+
 #left {
   display: flex;
   flex-wrap: wrap; }
+
+@font-face {
+  font-family: 'digital_dream';
+  src: url("../../assets/font/DIGITALDREAM.ttf") format("truetype"); }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'digital_dream', sans-serif;
+  box-sizing: border-box; }
+
+body {
+  background-color: deepskyblue; }
+
+#header {
+  display: flex;
+  justify-content: center; }
+
+#masterWrapper {
+  display: flex;
+  justify-content: center; }
+
+#sprite {
+  width: 96px;
+  height: 96px;
+  background-color: green; }
 
 /*# sourceMappingURL=style.css.map */
