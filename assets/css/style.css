@@ -12,4 +12,21 @@
   display: flex;
   flex-wrap: wrap; }
 
+.header {
+  width: 600px;
+  background-color: #BC0D0D; }
+
+.picture {
+  width: 600px;
+  background-color: #BC0D0D; }
+
+.choices {
+  width: 600px;
+  width: 600px;
+  background-color: #8B0000; }
+
+img {
+  width: 96px;
+  height: 96px; }
+
 /*# sourceMappingURL=style.css.map */
