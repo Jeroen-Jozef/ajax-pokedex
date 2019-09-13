@@ -12,7 +12,7 @@
     background-color: darkred;
     border-top-right-radius: 40%;
     border-bottom-right-radius: 10%;
-    box-shadow: 0 -8px 6px 0px black inset, 0 2px 6px 0px black inset, -5px 7px 4px 4px black;
+    box-shadow: 0 0 14px -2px red inset, 0 -8px 6px -2px black inset, 0 -5px 44px 3px black inset, 0px 4px 3px 3px black;;
 
 
     #masterHinge {
@@ -22,7 +22,7 @@
       width: 50px;
       left: -25px;
       top: -15px;
-      box-shadow: 11px 0px 12px -7px black, -12px 0px 12px -7px black, 0px 6px 3px 1px black, 0px 0px 3px 1px black, 0px 0px 10px 1px black inset;
+      box-shadow: 0px 14px 28px -9px darkred, -12px 0px 12px -7px black, 0px 12px 3px 1px black, 0px 0px 3px 1px black, 0px 0px 10px 1px black inset;
       border-radius: 14px;
       #hinge {
         background-color: darkred;
@@ -37,6 +37,7 @@
           height: 50px;
           box-shadow: 0 -3px 2px 5px darkred, 0 0px 6px 6px black;
           border-bottom-right-radius: 8px;
+          border-top-right-radius: 8px;
         }
         #bottomHinge {
           margin-top: 380px;
@@ -44,6 +45,7 @@
           height: 50px;
           width: 50px;
           box-shadow: 0 -3px 2px 5px darkred, 0 -7px 6px 6px black;
+          border-bottom-right-radius: 8px;
           border-top-right-radius: 8px;
         }
       }
@@ -111,3 +113,10 @@
     }
 
   }
+
+@media only screen and (max-width: 834px) {
+  #masterWrapper {
+    transform: scale(0.5);
+  }
+}
+
