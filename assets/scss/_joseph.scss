@@ -6,8 +6,39 @@
   position: relative;
   background-color: darkred;
   width: 400px;
-  left: 30px;
   border-bottom-left-radius: 50%;
+  border-top-left-radius: 33px;
+  box-shadow: 0 0 0px -2px red inset, 0 -8px 15px -3px black inset, 0 -5px 44px 7px black inset, 1px -1px 4px 0px black;
+  #lens2 {
+    position: absolute;
+    background-color: red;
+    left: 90px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px darkred inset, 0 0 2px 2px black;
+  }
+  #lens3 {
+    position: absolute;
+    background-color: yellow;
+    left: 119px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px darkgoldenrod inset, 0 0 2px 2px black;
+  }
+  #lens4 {
+    position: absolute;
+    background-color: greenyellow;
+    left: 148px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px green inset, 0 0 2px 2px black;
+  }
   #lens {
     position: absolute;
     background-color: deepskyblue;
@@ -15,7 +46,19 @@
     top: 10px;
     width: 60px;
     height: 60px;
-    border-radius: 50%
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px blue inset, 0 0 2px 2px black;
+    #lensFlare {
+      position: absolute;
+      left: 13px;
+      top: 8px;
+      opacity: 0.7;
+      background-color: whitesmoke;
+      height: 10px;
+      width: 20px;
+      border-radius: 50%;
+
+    }
   }
 }
 
@@ -24,6 +67,7 @@
 }
 
   #right {
+    top: 15px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -32,7 +76,7 @@
     background-color: darkred;
     border-top-right-radius: 40%;
     border-bottom-right-radius: 10%;
-    box-shadow: 0 0 14px -2px red inset, 0 -8px 6px -2px black inset, 0 -5px 44px 3px black inset, 0px 4px 3px 3px black;;
+    box-shadow: 0 0 14px -2px red inset, 0 -8px 6px -2px black inset, 0 -5px 44px 3px black inset, 0px 4px 3px 3px black;
 
 
     #masterHinge {
@@ -41,9 +85,10 @@
       background-color: darkred;
       width: 50px;
       left: -25px;
-      top: -15px;
+      top: -30px;
       box-shadow: 0px 14px 28px -9px darkred, -12px 0px 12px -7px black, 0px 12px 3px 1px black, 0px 0px 3px 1px black, 0px 0px 10px 1px black inset;
       border-radius: 14px;
+
       #hinge {
         background-color: darkred;
         width: 50px;
