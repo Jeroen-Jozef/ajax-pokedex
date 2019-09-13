@@ -2,6 +2,8 @@
 
 Making a pokédex in HTML/SCSS/Javascript using the pokeapi.
 
+![](./assets/img/pokedex.png)
+
 [Click here to visit site](https://jeroen-jozef.github.io/ajax-pokedex/index.html)
 
 ## Ajax pokédex
