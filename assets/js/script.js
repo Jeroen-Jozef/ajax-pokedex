@@ -15,9 +15,9 @@ function playAnimation () {
         iterations: Infinity
     });
     deEvolvedBox.animate([
-        { opacity: '1' },
         { opacity: '.9' },
-        { opacity: '1' }
+        { opacity: '1' },
+        { opacity: '.9' }
     ], {
         duration: 2000,
         iterations: Infinity
