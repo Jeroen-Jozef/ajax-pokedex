@@ -15,4 +15,4 @@ This project is based off pokeapi. In the API we fetch the id, the name, all mov
 This might well be a work in coninuous progress, which would reflect the "evoltution" of pokemon itself.
 
 ###### Created by: 
-Joseph John Lindzius and Jeroen Hendrickx
+[Joseph John Lindzius](https://github.com/JosephLindzius) and [Jeroen Hendrickx](https://github.com/Jeroen-Jozef)
