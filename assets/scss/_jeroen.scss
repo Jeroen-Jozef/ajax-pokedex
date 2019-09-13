@@ -14,6 +14,7 @@
   #searchWrapper {
     padding: 30px;
     margin: auto;
+    margin-top: 23px;
     text-align: center;
     text-transform: capitalize;
     height: 125px;
@@ -40,21 +41,25 @@
     }
   }
 
+  #submit:hover {
+    cursor: pointer;
+  }
+
   #pokemonWrapper{
     padding: 30px;
     margin: auto;
     margin-top: 20px;
     text-align: center;
     text-transform: capitalize;
-    height: 200px;
+    height: 150px;
     width: 200px;
     background-image: linear-gradient(greenyellow, green);
-   @include displayShadow;
+    @include displayShadow;
     border-radius: 10px;
 
     #name {
       margin: auto;
-      padding-top: 24px;
+      //padding-top: 24px;
       font-size: 12px;
     }
 
@@ -75,7 +80,7 @@
     justify-content: center;
 
     #id{
-      margin-top: 10px;
+      //margin-top: 10px;
       line-height: 50px;
       height: 50px;
       width: 150px;
