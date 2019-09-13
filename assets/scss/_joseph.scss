@@ -1,4 +1,6 @@
-
+@mixin displayShadow {
+  box-shadow: 0px 0px 82px #005100 inset, 0px 0px 5px 4px #600707 inset, 0 0 2px 2px black;
+}
 
 
   #right {
@@ -10,17 +12,17 @@
     background-color: darkred;
     border-top-right-radius: 40%;
     border-bottom-right-radius: 10%;
-    box-shadow: 0 -8px 6px 0px black inset, 0 2px 6px 0px black inset;
+    box-shadow: 0 -8px 6px 0px black inset, 0 2px 6px 0px black inset, -5px 7px 4px 4px black;
 
 
     #masterHinge {
       position: absolute;
-      height: 572px;
+      height: 552px;
       background-color: darkred;
       width: 50px;
       left: -25px;
-      top: 3px;
-      box-shadow: 11px 0px 12px -7px black, -12px 0px 12px -7px black, 0px 1px 3px 1px black, 0px 0px 3px 1px black, 0px 0px 10px 1px black inset;
+      top: -15px;
+      box-shadow: 11px 0px 12px -7px black, -12px 0px 12px -7px black, 0px 6px 3px 1px black, 0px 0px 3px 1px black, 0px 0px 10px 1px black inset;
       border-radius: 14px;
       #hinge {
         background-color: darkred;
@@ -78,7 +80,7 @@
         height: 50px;
         color: deepskyblue;
         background-color: black;
-        box-shadow: 0px 0px 82px black inset, 0px 0px 5px 4px #600707 inset;
+        box-shadow: 0px 0px 82px black inset, 0px 0px 5px 4px #600707 inset, 0 0 2px 2px black;
         border-radius: 10px;
 
       }
@@ -92,7 +94,7 @@
       width: 128px;
       height: 128px;
       background-image: linear-gradient(greenyellow, green);
-      box-shadow: 0px 0px 82px #005100 inset, 0px 0px 5px 4px #600707 inset;
+      @include displayShadow;
       border-radius: 10px;
 
       #evolution {
