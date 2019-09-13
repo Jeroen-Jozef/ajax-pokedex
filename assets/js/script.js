@@ -2,6 +2,30 @@ function getRandomIndex(items) {
     return Math.floor(Math.random() * items.length);
 }
 
+
+function playAnimation () {
+    var nameBox = document.getElementById("name");
+    var deEvolvedBox = document.getElementById("de-evolved");
+    nameBox.animate([
+        { opacity: '.9' },
+        { opacity: '1' },
+        { opacity: '.9' }
+    ], {
+        duration: 2000,
+        iterations: Infinity
+    });
+    deEvolvedBox.animate([
+        { opacity: '1' },
+        { opacity: '.9' },
+        { opacity: '1' }
+    ], {
+        duration: 2000,
+        iterations: Infinity
+    });
+
+}
+playAnimation();
+
 document.getElementById("submit").addEventListener("click", function(){
     let pokemon = document.getElementById("input").value;
 
@@ -59,6 +83,7 @@ document.getElementById("submit").addEventListener("click", function(){
                             .then(function(response){
                                 deevolvedPokemon = response.data;
                                 deevolved.src = deevolvedPokemon.sprites.front_default;
+
 
                             })
                             .catch(function (error) {

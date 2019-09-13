@@ -9,38 +9,82 @@
     display: flex;
     flex-direction: column;
     width: 400px;
+    padding: 50px;
     background-color: darkred;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 10%;
     #name{
+      padding: 30px;
+      margin: auto;
       text-align: center;
       text-transform: capitalize;
-      height: 50px;
-      width: 100px;
-      background-color: greenyellow
+      height: 100px;
+      width: 200px;
+      background-image: linear-gradient(greenyellow, green);
+      box-shadow: 0px 0px 82px #005100 inset, 0px 0px 5px 4px #600707 inset;
+      border-radius: 10px;
+
     }
 
     #id{
+      padding-top: 17px;
+      padding-bottom: 17px;
+      margin-top: 10px;
+      margin-left: 33%;
+
       height: 50px;
       width: 100px;
       background-color: purple;
+      box-shadow: 0px 0px 82px purple inset, 0px 0px 5px 4px #600707 inset;
+      border-radius: 10px;
+      text-align: center;
     }
 
-    #moveWrapper {
+    #move-wrapper {
       display: flex;
-      justify-content: space-around;
-      width: 100%;
+      flex-direction: column;
+
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       .move {
-        width: 50px;
+        padding-top: 16px;
+        margin:5px;
+       text-align: center;
+        width: 200px;
         height: 50px;
         color: deepskyblue;
+        background-color: black;
+        box-shadow: 0px 0px 82px black inset, 0px 0px 5px 4px #600707 inset;
+        border-radius: 10px;
+
       }
     }
-    #evolution {
-      width: 50%;
-      background-color: gold;
+
+    #deEWrapper {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 128px;
+      height: 128px;
+      background-image: linear-gradient(greenyellow, green);
+      box-shadow: 0px 0px 82px #005100 inset, 0px 0px 5px 4px #600707 inset;
+      border-radius: 10px;
+
+      #evolution {
+        margin: auto;
+        font-size: 12px;
+        padding-top: 24px;
+      }
+
+      #de-evolved {
+        margin: auto;
+        width: 96px;
+        height: 96px;
+      }
     }
-    #de-evolved {
-      width: 96px;
-      height: 96px;
-      background-color: green;
-    }
+
   }
