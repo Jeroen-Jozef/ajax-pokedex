@@ -2,9 +2,7 @@
 
 Making a pokédex in HTML/SCSS/Javascript using the pokeapi.
 
-![Weatherman Joe App](./assets/images/WeathermanJoe.png)
-
-[Click here to visit site](https://josephlindzius.github.io/ajax-weather-api/index.html)
+[Click here to visit site](https://jeroen-jozef.github.io/ajax-pokedex/index.html)
 
 ## Ajax pokédex
 
