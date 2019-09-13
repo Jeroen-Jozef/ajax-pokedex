@@ -9,6 +9,28 @@
   border-top-left-radius: 40%;
   border-bottom-left-radius: 10%;
 
+  #searchWrapper {
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+    height: 125px;
+    width: 200px;
+    background-image: linear-gradient(greenyellow, green);
+    box-shadow: 0px 0px 82px #005100 inset, 0px 0px 5px 4px #600707 inset;
+    border-radius: 10px;
+
+    #input {
+      width: 113px;
+      outline: none;
+    }
+
+    #submit {
+      width: 100px;
+      height: 30px;
+    }
+  }
+
   #pokemonWrapper{
     padding: 30px;
     margin: auto;
@@ -34,26 +56,28 @@
     }
   }
 
+  #extraWrapper {
+    display: flex;
+    flex-direction: row;
 
 
+    #id{
+      padding-top: 17px;
+      padding-bottom: 17px;
+      margin-top: 10px;
+      margin-left: 33%;
+
+      height: 50px;
+      width: 100px;
+      background-color: purple;
+      box-shadow: 0px 0px 82px purple inset, 0px 0px 5px 4px #600707 inset;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
 }
 
-.header {
-  width: 600px;
-  background-color: #BC0D0D;
-}
+/*#id, #previous, #next {
+      flex-grow: 1;
+    }*/
 
-.picture {
-  width: 600px;
-  background-color: #BC0D0D;
-}
-
-.choices {
-  width: 600px;width: 600px;
-  background-color: #8B0000;
-}
-
-img {
-  width: 96px;
-  height: 96px;
-}
