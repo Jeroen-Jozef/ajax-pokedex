@@ -2,12 +2,32 @@
   box-shadow: 0px 0px 82px #005100 inset, 0px 0px 5px 4px #600707 inset, 0 0 2px 2px black;
 }
 
+#leftWrapper {
+  position: relative;
+  background-color: darkred;
+  width: 400px;
+  left: 30px;
+  border-bottom-left-radius: 50%;
+  #lens {
+    position: absolute;
+    background-color: deepskyblue;
+    left: 15px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%
+  }
+}
+
+#rightWrapper {
+  width: 400px;
+}
 
   #right {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 400px;
+
     padding: 50px;
     background-color: darkred;
     border-top-right-radius: 40%;
